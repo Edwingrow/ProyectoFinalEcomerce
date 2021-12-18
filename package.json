@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Proyecto final de Edwin",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Edwingrow/ProyectoFinalEcomerce/issues"
   },
-  "homepage": "https://github.com/Edwingrow/ProyectoFinalEcomerce#readme"
+  "homepage": "https://github.com/Edwingrow/ProyectoFinalEcomerce#readme",
+  "dependencies": {
+    "http-server": "^14.0.0"
+  }
 }
