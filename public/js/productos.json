@@ -1,30 +1,26 @@
 [
     {
-        "id": "1",
-        "nombre": "Sueter ",
-        "precio": "$18000",
-        "stock": 100,
-        "img": "../img/pexels-cottonbro-9943249.jpg"
+        "id": 1,
+        "nombre": "Lisa Sweater Simpsons",
+        "precio": 7499,
+        "img": "./img/sweater-lisa-hombre-11-50a511fc77725b745e16170477711912-640-0.jpg"
     },
     {
-        "id": "2",
-        "nombre": "Sueter",
-        "precio": "$8000",
-        "stock": 10,
-        "img": "../img/pexels-konstantin-mishchenko-3765547.jpg"
+        "id": 2,
+        "nombre": "Arbusto Sweater Simpsons",
+        "precio": 7499,
+        "img": "./img/sweater-arbusto-hombre-21-a17c8467872070224816170478675661-640-0.jpg"
     },
     {
-        "id": "3",
-        "nombre": "Sueter",
-        "precio": "$12000",
-        "stock": 50,
-        "img": "../img/pexels-thanh-phạm-2834566.jpg"
+        "id": 3,
+        "nombre": "Sofa Sweater Simpsons",
+        "precio": 7499,
+        "img": "./img/sweater-sofa-31-ed4956b1416fd09aaf16170475653024-640-0.jpg"
     },
     {
-        "id": "4",
-        "nombre": "Sueter",
-        "precio": "$40999",
-        "stock": 80,
-        "img": "../img/pexels-daria-shevtsova-1030946.jpg"
+        "id": 4,
+        "nombre": "Flanders Camisa Simpsons",
+        "precio": 4299,
+        "img": "./img/camisa-flanders1-588e2fb133ef714f6a15948165989714-1024-1024.jpg"
     }
 ]

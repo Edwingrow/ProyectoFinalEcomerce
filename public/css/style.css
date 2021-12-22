@@ -360,7 +360,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 150%;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
@@ -389,7 +389,9 @@ img {
   margin-top: 20px;
   margin-right: 20px;
 }
-
+.fab{
+  color: white;
+}
 
 /*Estilos para tablet*/
 @media screen and (min-width:768px) {

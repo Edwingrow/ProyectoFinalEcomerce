@@ -35,7 +35,7 @@
         <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
         <nav class="main-nav" id="main-nav">
           <ul class="menu">
-            <li class="menu__item"><a href="../index.html" class="menu__link">HOME</a></li>
+            <li class="menu__item"><a href="./index.html" class="menu__link">HOME</a></li>
             <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
             <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
             <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
@@ -44,8 +44,8 @@
         </nav>
       </div>
       <div class="main-header__container">
-        <span class="main-header__txt">Need Help</span>
-        <p class="main-header__txt"><i class="fas fa-phone"></i> Call 12345678099</p>
+        <span class="main-header__txt">Need Help?</span>
+        <p class="main-header__txt"><i class="fas fa-phone"></i> Call +541165405062</p>
       </div>
       <div class="main-header__container">
         <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
@@ -70,7 +70,7 @@
           <div class="modal-body ">
             <div class="row  modal-header text-center">
               <div class="col-3">
-                <h6>Prodcuto</h6>
+                <h6>producto</h6>
               </div>
               <div class="col-3">
                 <h6>Precio</h6>
@@ -86,42 +86,25 @@
 
             </div>
             <div class="d-flex justify-content-end">
-              <h5 class="precioTotal">Total: <span class="text-success total-price">0</span></h5>
+              <h5 class="precioTotal" id="total">Total: <span class="text-success total-price"></span></h5>
             </div>
           </div>
           <div class="modal-footer border-top-0 d-flex justify-content-between">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" id="modal__close" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             <button type="button" class="btn btn-danger btn-vaciar-carrito" id="delete-cart">Vaciar carrito</button>
-            <button type="button" class="btn btn-success btn-finalizar-compra" data-toggle="modal"
-              data-target="#comprarModal"> Finalizar compra</button>
-            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-              aria-hidden="true">
-              <!-- Modal Finalizar compra -->
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="comprarModalLabel">¡Gracias por su compra!</h5>
-                    <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Pronto recibirá su pedido</p>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <a href="#modal-2">
+              <button type="button" id="modal-2" class="btn btn-success btn-finalizar-compra" data-toggle="modal"
+                data-target="#comprarModal"> Finalizar compra</button>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <main class="main">
     <div class="container_product">
-      <h2 class="main-title">Productos</h2>
+      <h2 class="main-title">Especial los Simpson</h2>
       <section class="container-products">
         <!--Aqui va el codigo de productos-->
       </section>
@@ -133,15 +116,17 @@
   <footer class="main-footer">
     <div class="footer__section">
       <h2 class="footer__title">About Us</h2>
-      <p class="footer__txt">Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
-        consectetur sed, convallis at tellus. Nulla porttitor accumsana tincidunt.</p>
+      <p class="footer__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero vel, quidem,
+        consequuntur modi ad sapiente </p>
     </div>
     <div class="footer__section">
       <h2 class="footer__title">Location :</h2>
-      <p class="footer__txt">0926k 4th block building, king Avenue, New York City</p>
+      <p class="footer__txt">Buenos Aires, Argentina</p>
       <h2 class="footer__title">Contact</h2>
-      <p class="footer__txt">Phone : +121 098 8907 9987</p>
-      <p class="footer__txt">Email : info@example.com</p>
+      <p class="footer__txt">Phone : +54 1165405062</p>
+      <p class="footer__txt">Email : Edwingrow16@gmail.com</p>
+      <p><a href="https://api.whatsapp.com/send?phone=+54 1165405062" target="_blank">
+          <i class="fab fa-whatsapp" style="font-size:80px;"></i></a></p>
     </div>
     <div class="footer__section">
       <h2 class="footer__title">Quick Links</h2>
@@ -152,15 +137,15 @@
       <a href="" class="footer__link">Contact Us</a>
     </div>
     <div class="footer__section">
-      <h2 class="footer__title">Sign up for your offers</h2>
-      <p class="footer__txt">By subscribing to our mailing list you will always get latest news and updates from us.
+      <h2 class="footer__title">Sign up</h2>
+      <p class="footer__txt">By subscribing to our mailing list you will always get the latest news and updates from us.
       </p>
       <input type="email" class="footer__input" placeholder="Enter your email">
     </div>
-    <p class="copy">© 2021 Goggles. All Rights Reserved | Design by W3Layouts</p>
+    <p class="copy">© 2021 Edwin García</p>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--SweetAlert2-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--Jquery-->
   <script src="./js/app.js"></script>
   <script src="./js/carrito.js"></script>
 </body>

@@ -12,7 +12,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -43,47 +43,95 @@
         </nav>
       </div>
       <div class="main-header__container">
-        <span class="main-header__txt">Need Help</span>
-        <p class="main-header__txt"><i class="fas fa-phone"></i> Call 12345678099</p>
+        <span class="main-header__txt">Need Help?</span>
+        <p class="main-header__txt"><i class="fas fa-phone"></i> Call +54 1165405062</p>
       </div>
       <div class="main-header__container">
         <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
-        <a href="" class="main-header__btn btn">My cart <i class="fas fa-shopping-cart"></i></a>
-        <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-search"></i>
+        <button type="button" id="cart-btn" class="main-header__input btn" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          My cart <i class="fas fa-shopping-cart"></i>
+        </button>
+        <input type="search" placeholder="Buscar productos"><i class="fas fa-search"></i>
       </div>
     </div>
   </header>
+  <div class="contenedor">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header  border-bottom-0 ">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Carrito
+            </h5>
+          </div>
+          <div class="modal-body ">
+            <div class="row  modal-header text-center">
+              <div class="col-3">
+                <h6>producto</h6>
+              </div>
+              <div class="col-3">
+                <h6>Precio</h6>
+              </div>
+              <div class="col-3">
+                <h6>Cantidad</h6>
+              </div>
+              <div class="col-3">
+                <h6>Eliminar</h6>
+              </div>
+            </div>
+            <div class="show-cart" id="show-cart">
+
+            </div>
+            <div class="d-flex justify-content-end">
+              <h5 class="precioTotal" id="total">Total: <span class="text-success total-price"></span></h5>
+            </div>
+          </div>
+          <div class="modal-footer border-top-0 d-flex justify-content-between">
+            <button type="button" id="modal__close" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-danger btn-vaciar-carrito" id="delete-cart">Vaciar carrito</button>
+            <a href="#modal-2">
+              <button type="button" id="modal-2" class="btn btn-success btn-finalizar-compra" data-toggle="modal"
+                data-target="#comprarModal"> Finalizar compra</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container-slider">
     <div class="slider" id="slider">
       <div class="slider__section">
-        <img src="./img/pexels-alleksana-4271568.jpg" alt="" class="slider__img">
+        <img src="./img/Espacialnavidad1.jpg" alt="" class="slider__img">
         <div class="slider__content">
-          <h2 class="slider__title">Women’s eyewear</h2>
-          <p class="slider__txt">Cool summer sale 50% off</p>
+          <h2 class="slider__title">Especial Navidad<p>&#127876;</p>
+          </h2>
+          <p class="slider__txt">25% off</p>
           <a href="" class="btn-shop">SHOP NOW</a>
         </div>
       </div>
       <div class="slider__section">
-        <img src="./img/pexels-daria-shevtsova-1030946.jpg" alt="" class="slider__img">
+        <img src="./img/verano.jpg" alt="" class="slider__img">
         <div class="slider__content">
-          <h2 class="slider__title">Women’s eyewear</h2>
-          <p class="slider__txt">Cool summer sale 50% off</p>
+          <h2 class="slider__title">Se viene el verano<p>&#128526;</p>
+          </h2>
+          <p class="slider__txt"> 15% off</p>
           <a href="/html/market.html" class="btn-shop">SHOP NOW</a>
         </div>
       </div>
       <div class="slider__section">
-        <img src="./img/pexels-cottonbro-6069080.jpg" alt="" class="slider__img">
+        <img src="./img/pants.jpg" alt="" class="slider__img">
         <div class="slider__content">
-          <h2 class="slider__title">Women’s eyewear</h2>
-          <p class="slider__txt">Cool summer sale 50% off</p>
+          <h2 class="slider__title">Pantalones</h2>
+          <p class="slider__txt"></p>
           <a href="/html/market.html" class="btn-shop">SHOP NOW</a>
         </div>
       </div>
       <div class="slider__section">
-        <img src="./img/pexels-cottonbro-6068960.jpg" alt="" class="slider__img">
+        <img src="./img/camisas.jpg" alt="" class="slider__img">
         <div class="slider__content">
-          <h2 class="slider__title">Men’s eyewear</h2>
-          <p class="slider__txt">Cool summer sale 50% off</p>
+          <h2 class="slider__title">Camisas</h2>
+          <p class="slider__txt">10% off</p>
           <a href="/html/market.html" class="btn-shop">SHOP NOW</a>
         </div>
       </div>
@@ -97,34 +145,30 @@
       <section class="container-products_main">
         <!--Aqui va el codigo de productos-->
         <div class="product_main">
-          <img src="./img/pexels-anne-r-4602025.jpg" alt="" class="product__img_main">
+          <img src="./img/pijama.jpg" alt="" class="product__img_main">
           <div class="product__description_main">
-            <h3 class="product__title_main">Remeras</h3>
-            <span class="product__price_main">$1200</span>
+            <h3 class="product__title_main">Pijamas</h3>
           </div>
           <i class="product__icon fas fa-cart-plus"></i>
         </div>
         <div class="product_main">
-          <img src="./img/pexels-anne-r-4602025.jpg" alt="" class="product__img_main">
+          <img src="./img/zaaptoa.jpg" alt="" class="product__img_main">
           <div class="product__description_main">
-            <h3 class="product__title_main">Remeras</h3>
-            <span class="product__price_main">$1200</span>
+            <h3 class="product__title_main">Zapatos</h3>
           </div>
           <i class="product__icon fas fa-cart-plus"></i>
         </div>
         <div class="product_main">
-          <img src="./img/pexels-anne-r-4602025.jpg" alt="" class="product__img_main">
+          <img src="./img/lancome-0162-346398-1-zoom.jpg" alt="" class="product__img_main">
           <div class="product__description_main">
-            <h3 class="product__title_main">Remeras</h3>
-            <span class="product__price_main">$1200</span>
+            <h3 class="product__title_main">Perfumes</h3>
           </div>
           <i class="product__icon fas fa-cart-plus"></i>
         </div>
         <div class="product_main">
-          <img src="./img/pexels-anne-r-4602025.jpg" alt="" class="product__img_main">
+          <img src="./img/blusas.jpg" alt="" class="product__img_main">
           <div class="product__description_main">
-            <h3 class="product__title_main">Remeras</h3>
-            <span class="product__price_main">$1200</span>
+            <h3 class="product__title_main">Blusas</h3>
           </div>
           <i class="product__icon fas fa-cart-plus"></i>
         </div>
@@ -171,15 +215,17 @@
   <footer class="main-footer">
     <div class="footer__section">
       <h2 class="footer__title">About Us</h2>
-      <p class="footer__txt">Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
-        consectetur sed, convallis at tellus. Nulla porttitor accumsana tincidunt.</p>
+      <p class="footer__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero vel, quidem,
+        consequuntur modi ad sapiente </p>
     </div>
     <div class="footer__section">
       <h2 class="footer__title">Location :</h2>
-      <p class="footer__txt">0926k 4th block building, king Avenue, New York City</p>
+      <p class="footer__txt">Buenos Aires, Argentina</p>
       <h2 class="footer__title">Contact</h2>
-      <p class="footer__txt">Phone : +121 098 8907 9987</p>
-      <p class="footer__txt">Email : info@example.com</p>
+      <p class="footer__txt">Phone : +54 1165405062</p>
+      <p class="footer__txt">Email : Edwingrow16@gmail.com</p>
+      <p><a href="https://api.whatsapp.com/send?phone=+54 1165405062"  target="_blank">
+          <i class="fab fa-whatsapp" style="font-size:80px;"></i></a></p>
     </div>
     <div class="footer__section">
       <h2 class="footer__title">Quick Links</h2>
@@ -190,17 +236,18 @@
       <a href="" class="footer__link">Contact Us</a>
     </div>
     <div class="footer__section">
-      <h2 class="footer__title">Sign up for your offers</h2>
-      <p class="footer__txt">By subscribing to our mailing list you will always get latest news and updates from us.
+      <h2 class="footer__title">Sign up </h2>
+      <p class="footer__txt">By subscribing to our mailing list you will always get the latest news and updates from us.
       </p>
       <input type="email" class="footer__input" placeholder="Enter your email">
     </div>
-    <p class="copy">© 2021 Goggles. All Rights Reserved | Design by W3Layouts</p>
+    <p class="copy">© 2021 Edwin García</p>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--SweetAlert2-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--JQuery-->
   <script src="./js/slider.js"></script>
   <script src="./js/app.js"></script>
+  <script src="./js/carrito.js"></script>
 </body>
 
 </html>
