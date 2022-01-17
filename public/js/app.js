@@ -24,7 +24,7 @@ fetch('./js/productos.json')
         productos.push(producto)
         localStorage.setItem('productos', JSON.stringify(productos));
         document.getElementById("cart-btn").innerHTML = `
-          My cart (${productos.length+1}) <i class="fas fa-shopping-cart"></i>
+          My cart (${productos.length}) <i class="fas fa-shopping-cart"></i>
         `;
       })
 
